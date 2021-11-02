@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import Landing from './Landing'
 import './App.css';
 import { applyMiddleware, createStore } from 'redux';
 import reducers from './store/rootReducers'
