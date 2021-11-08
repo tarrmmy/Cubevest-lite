@@ -4,11 +4,11 @@ const Signup = () => {
   return (
     <div id="head">
 
-     <div className="pig">
-      <i className="piggy fas fa-piggy-bank"></i> 
-      <h2 id="cube">Cubevest-lite</h2>
-     </div>
      
+     
+      <h2 id="cube">Cubevest-lite</h2>
+     
+
      {/* container starts */}
       <p id="container">
         <div id="create">
