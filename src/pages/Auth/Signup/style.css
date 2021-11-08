@@ -1,0 +1,123 @@
+* {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 17px;
+}
+
+#head {
+    background-color: #062863;
+    color: black;
+    height: 157vh;
+}
+
+#create {
+    text-align: center;
+}
+
+#cube {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+#container {
+    background-color: white;
+    font-family: Karla sans-serif;
+    height: 125vh;
+    width: 67vh;
+    margin: 0 auto;
+    border-radius: 20px 20px 20px 0;
+}
+
+#floatingInput {
+    height: 60px;
+    width: 90%;
+    padding-left: 15px;
+    background-color: rgb(237, 248, 247);
+    border: none;
+    outline: none;
+}
+
+h3 {
+    color: #083E9E;
+    padding-top: 35px;
+    font-size: 30px;
+}
+
+h4 {
+    padding-top: 8px;
+    color: #4A5568;
+    font-size: 17px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+.Name {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+#select {
+    height: 60px;
+    width: 90%;
+    padding-left: 15px;
+    background-color: rgb(237, 248, 247);
+    border-radius: 8px;
+    margin-left: 33px;
+    border: none;
+    outline: none;
+}
+
+.How {
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+button {
+    height: 60px;
+    width: 86%;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #083E9E;
+    border: none;
+    border-radius: 10px 10px 10px 0;
+    color: white;
+    font-size: 18x;
+}
+
+button:hover {
+    background-color: #062863;
+}
+
+.bottom {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(237, 248, 247);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.bottom:hover {
+    color: white;
+}
+
+.log {
+    text-decoration: none;
+    color: white;
+}
+
+.log:hover {
+    color: #85878a;
+}
+
+#floatingPassword {
+    height: 60px;
+    width: 90%;
+    padding-left: 15px;
+    background-color: rgb(237, 248, 247);
+    border: none;
+    outline: none;
+}
