@@ -1,4 +1,149 @@
-.cl{
-  height: 50vh;
-  background-color: aquamarine;
+
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Zen Maru Gothic', sans-serif;
+ */
+
+
+ *{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   -webkit-user-drag: none;
+  -webkit-app-region:none;
+ }
+
+#background {
+  background-color: #062863;
+  height: 100vh;
+  color: white;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-right: 10px;
+  padding-top: 6vh;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size:2rem;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.piggy {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.form-space {
+  margin: 0 auto;
+  justify-content: center;
+  background-color: white;
+  height: 65vh;
+  width: 65vh;
+  border-radius: 25px 25px 25px 0;
+}
+
+.form-space-header {
+  display:block;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 15px 30px;
+}
+
+.form-space-header > h1 {
+  font-family: 'Zen Maru Gothic', sans-serif;
+   color: #083E9E;
+   font-size: 30px;
+
+}
+
+.form-space-header > p {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  color: #4A5568;
+  font-size: 20px;
+}
+
+.form-input {
+  color: black;
+}
+
+.form-input-email-password {
+  display: block;
+  margin-bottom: 30px;
+  text-align: justify;  
+}
+
+.form-label {
+  margin-left: 20px;
+}
+
+.down {
+  margin-top: 15px;
+}
+
+
+.form-control {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90%;
+  text-align: left;
+  padding: 15px;
+}
+
+
+input:focus, input.form-control:focus {
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.btn {
+  background-color: #0d60d8;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 10px 10px 10px 0;
+  width: 90%;
+}
+
+.btn:hover{
+  background-color: #062863;
+}
+
+.btn:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.footer {
+  display: block;
+  color: white;
+  margin-top: 15px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.forgot {
+  text-decoration: none;
+  color: white;
+}
+
+.forgot:hover{
+  color: rgb(119, 118, 118);
 }
