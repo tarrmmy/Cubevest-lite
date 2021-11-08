@@ -1,10 +1,14 @@
 import React from 'react'
-import './style.css'
+import './Signup.css'
 const Signup = () => {
   return (
     <div id="head">
-      
-     <h2 id="cube">Cubevest-lite</h2>
+
+     <div className="pig">
+      <i className="piggy fas fa-piggy-bank"></i> 
+      <h2 id="cube">Cubevest-lite</h2>
+     </div>
+     
      {/* container starts */}
       <p id="container">
         <div id="create">
@@ -43,7 +47,7 @@ const Signup = () => {
         <div>
           <h5 className="How">How Did You Hear About Us?(Optional)</h5>
           <select class="form-select" aria-label="Default select example" id="select">
-            <option selected>Click To Select</option>
+            <option className="option" selected>Click To Select</option>
             <option value="1">Facebook</option>
             <option value="2">Twitter</option>
             <option value="3">Whatsapp</option>
@@ -52,7 +56,7 @@ const Signup = () => {
             <option value="6">Google Playstore</option>
             <option value="7">Online Blog</option>
             <option value="8">Local Newspapers</option>
-            <option value="9">Other</option>
+            <option value="9">Others</option>
           </select>
         </div>
 
