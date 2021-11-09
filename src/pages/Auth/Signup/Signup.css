@@ -37,6 +37,7 @@
     background-color: rgb(237, 248, 247);
     border: none;
     outline: none;
+    margin-left: -2px;
 }
 
 h3 {
@@ -53,22 +54,31 @@ h4 {
 
 h5 {
     margin-bottom: 10px;
+    text-align: justify;
+    font-size: 17px;
+
 }
 
 .Name {
     margin-left: 35px;
     margin-top: 20px;
+    text-align: justify;
 }
 
 #select {
     height: 60px;
-    width: 90%;
+    width: 84%;
     padding-left: 15px;
     background-color: rgb(237, 248, 247);
     border-radius: 8px;
     margin-left: 33px;
     border: none;
     outline: none;
+
+}
+
+.option {
+    text-align: left;
 }
 
 .How {
@@ -78,14 +88,15 @@ h5 {
 
 button {
     height: 60px;
-    width: 86%;
-    margin-left: 30px;
+    width: 84%;
+    margin-left: 5px;
     margin-top: 20px;
     background-color: #083E9E;
     border: none;
     border-radius: 10px 10px 10px 0;
     color: white;
     font-size: 18x;
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 button:hover {
@@ -120,4 +131,18 @@ button:hover {
     background-color: rgb(237, 248, 247);
     border: none;
     outline: none;
+    margin-left: -2px;
 }
+
+/* .pig {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 10px;
+    padding-top: 6vh;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 48px;
+    color: whites;
+} */
