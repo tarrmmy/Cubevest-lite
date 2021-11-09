@@ -38,12 +38,17 @@ font-family: 'Zen Maru Gothic', sans-serif;
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size:2rem;
   justify-content: center;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
+}
+
+.header > h2 {
+  margin-top: 10px;
 }
 
 .piggy {
   margin-right: 15px;
   margin-top: 10px;
+  font-size: 2rem;
 }
 
 .form-space {
@@ -116,6 +121,7 @@ input:focus, input.form-control:focus {
   background-color: #0d60d8;
   text-transform: uppercase;
   padding: 10px;
+  margin: 0 auto;
   border-radius: 10px 10px 10px 0;
   width: 90%;
 }

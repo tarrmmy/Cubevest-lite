@@ -34,9 +34,9 @@ import "./style.css";
 const Login = () => {
   return (
     <div id='background'>
-
+    
         <div className='header'> 
-         <i className="piggy fas fa-piggy-bank"></i>
+          <i className="piggy fas fa-piggy-bank"></i> 
           <h2>Cubevest-lite</h2>
         </div>
 
@@ -66,4 +66,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Login;
