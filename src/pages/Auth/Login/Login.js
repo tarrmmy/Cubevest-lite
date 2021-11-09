@@ -11,6 +11,7 @@
 //       payload: { name: val }
 //     })
 //   }
+
 //   return (
 //     <div className="cl">
 //       Welcome to login {login.name}
