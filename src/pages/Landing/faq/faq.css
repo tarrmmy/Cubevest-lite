@@ -1,0 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    height: 80px;
+    width: 70%;
+    border-radius: 10px;
+}

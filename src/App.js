@@ -8,6 +8,8 @@ import createSagaMiddleware from '@redux-saga/core';
 import { Redirect, Route, Router, Switch } from 'react-router';
 import Signup from './pages/Auth/Signup/Signup';
 import Login from './pages/Auth/Login/Login';
+import Faq  from './pages/Landing/faq/faq';
+
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
 
@@ -21,6 +23,7 @@ function App() {
         <Route component={Landing} exact path="/" />
         <Route component={Signup} path="/signup" />
         <Route component={Login} path="/login" />
+        <Route component={Faq} path="/faq"/>
         <Redirect from="*" to="/" />
       </Switch>
     </Router>
