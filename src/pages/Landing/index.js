@@ -8,4 +8,4 @@ const index = () => {
   )
 }
 
-export default index
+export default index;

@@ -29,8 +29,8 @@
 
 
 import React from 'react';
+// import { Link } from 'react-router-dom';
 import "./style.css";
-
 
 const Login = () => {
   return (
@@ -60,7 +60,7 @@ const Login = () => {
            </div>
          </div>
                   <div className='footer'>
-                       <p>Don't have an account? <a href='' className='forgot'>Register</a></p>
+                       <p>Don't have an account? <a href="/signup" className='forgot'>Register</a></p>
                        <p><a href='' className='forgot'>Forgot password?</a></p>
                 </div>
     </div>

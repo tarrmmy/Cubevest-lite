@@ -15,7 +15,11 @@
     "react-redux": "^7.2.6",
     "react-reveal": "^1.2.2",
     "react-router": "^5.2.1",
+<<<<<<< HEAD
     "react-router-dom": "^6.0.1",
+=======
+    "react-router-dom": "^5.2.1",
+>>>>>>> faf3b0404eedf0924afe7066689f5692c9436cd9
     "react-scripts": "4.0.3",
     "redux": "^4.1.2",
     "redux-saga": "^1.1.3",
