@@ -1,10 +1,10 @@
 import React from 'react'
+import {Link} from 'react-router-dom' 
 import './Signup.css'
+// import { Router } from 'react-router'
 const Signup = () => {
   return (
     <div id="head">
-
-     
      
       <h2 id="cube">Cubevest-lite</h2>
      
@@ -30,10 +30,6 @@ const Signup = () => {
           <input type="text" class="form-control" id="floatingInput" placeholder="Phone Number"/>
         </div>  
 
-        {/* <div className="Name">
-          <h5>Password</h5>
-          <input type="email" class="form-control" id="floatingInput" placeholder="Password"/>
-        </div> */}
 
         <div className="Name">
           <h5>Password</h5>
@@ -64,7 +60,7 @@ const Signup = () => {
      </p>
      {/* container ends */}
 
-     <h4 className="bottom">Already have an account? <a className="log" href="">Log in</a></h4>
+     <h4 className="bottom">Already have an account?<a className="log" href='/login'> Log in </a></h4>
     </div>
   )
 }

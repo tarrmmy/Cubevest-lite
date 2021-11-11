@@ -1,12 +1,15 @@
 * {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 17px;
+    padding: 0;
+    margin: 0;
 }
 
 #head {
     background-color: #062863;
     color: black;
     height: 157vh;
+    width: 100%;
 }
 
 #create {
