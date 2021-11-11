@@ -10,10 +10,10 @@ import Signup from './pages/Auth/Signup/Signup';
 import Login from './pages/Auth/Login/Login';
 import Faq  from './pages/Landing/faq/faq';
 import Stories from './pages/Landing/stories/stories';
-import SafeToLock from './pages/Landing/safeToLock/safe';
+import Safe from './pages/Landing/safe/safe';
 import Invest from './pages/Landing/invest/invest';
-import RegularSavings from './pages/Landing/regularSavings/regular';
-import TargetSavings from './pages/Landing/targetSavings/target';
+import Regular from './pages/Landing/regular/regular';
+import Target from './pages/Landing/target/target';
 
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
@@ -31,9 +31,9 @@ function App() {
         <Route component = {Faq} path="/faq" />
         <Route component = {Invest} path="/invest" />
         <Route component = {Stories} path="/stories" />
-        <Route component = {SafeToLock} path="safeToLock" />
-        <Route component = {TargetSavings} path="targetSavings" />
-        <Route component = {RegularSavings} path="regularSavings" />
+        <Route component = {Safe} path="/safe" />
+        <Route component = {Target} path="/target" />
+        <Route component = {Regular} path="/regular" />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>

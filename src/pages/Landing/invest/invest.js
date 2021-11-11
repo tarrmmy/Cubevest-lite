@@ -7,6 +7,7 @@ const invest = () => {
     return (
         <div>
           <Nav />
+          Wagwan
         </div>
     )
 }

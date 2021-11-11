@@ -7,6 +7,7 @@ const stories = () => {
     return (
         <div>
            <Nav />
+           Na stories be this
         </div>
     )
 }

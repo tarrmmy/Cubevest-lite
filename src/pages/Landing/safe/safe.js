@@ -7,6 +7,7 @@ const safe = () => {
     return (
         <div>
            <Nav />
+           gxghsghxcghchgcdcghcd
         </div>
     )
 }
