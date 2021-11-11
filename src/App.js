@@ -9,6 +9,7 @@ import { Redirect, Route, Router, Switch } from 'react-router';
 import Signup from './pages/Auth/Signup/Signup';
 import Login from './pages/Auth/Login/Login';
 import Faq  from './pages/Landing/faq/faq';
+// import Nav from './components/Navbar/Nav';
 
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()

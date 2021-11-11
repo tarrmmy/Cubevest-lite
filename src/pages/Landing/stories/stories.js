@@ -1,10 +1,14 @@
 
-import React from 'react'
+import React from 'react';
+import Nav from '../../../components/Navbar/Nav';
+import './stories';
 
-export const stories = () => {
+const stories = () => {
     return (
         <div>
-            
+           <Nav />
         </div>
     )
 }
+
+export default stories;
