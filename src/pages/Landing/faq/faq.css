@@ -8,3 +8,15 @@ input {
     width: 70%;
     border-radius: 10px;
 }
+
+.Box {
+    background-color: yellow;
+    height: 100px;
+    width: 50px;
+}
+
+.sack {
+    background-color: tomato;
+    height: 100px;
+    width: 50px;
+}
