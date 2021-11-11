@@ -9,7 +9,11 @@ import { Redirect, Route, Router, Switch } from 'react-router';
 import Signup from './pages/Auth/Signup/Signup';
 import Login from './pages/Auth/Login/Login';
 import Faq  from './pages/Landing/faq/faq';
-// import Nav from './components/Navbar/Nav';
+import Stories from './pages/Landing/stories/stories';
+import SafeToLock from './pages/Landing/safeToLock/safe';
+import Invest from './pages/Landing/invest/invest';
+import RegularSavings from './pages/Landing/regularSavings/regular';
+import TargetSavings from './pages/Landing/targetSavings/target';
 
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
@@ -21,10 +25,15 @@ function App() {
   return (
     <Router history={history}>
       <Switch>
-        <Route component={Landing} exact path="/" />
-        <Route component={Signup} path="/signup" />
-        <Route component={Login} path="/login" />
-        <Route component={Faq} path="/faq"/>
+        <Route component = {Landing} exact path="/" />
+        <Route component = {Signup} path="/signup" />
+        <Route component = {Login} path="/login" />
+        <Route component = {Faq} path="/faq" />
+        <Route component = {Invest} path="/invest" />
+        <Route component = {Stories} path="/stories" />
+        <Route component = {SafeToLock} path="safeToLock" />
+        <Route component = {TargetSavings} path="targetSavings" />
+        <Route component = {RegularSavings} path="regularSavings" />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>
