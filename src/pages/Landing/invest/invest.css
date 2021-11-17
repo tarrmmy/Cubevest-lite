@@ -1,0 +1,109 @@
+h1 {
+    color: black;
+    font-size: 45px;
+}
+
+.butt {
+    width: 210px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #7913E5;
+    font-weight: bold;
+}
+
+#telephone {
+    height: 100vh;
+
+}
+
+#sem {
+    display: block;
+}
+
+#tele {
+    height: 30vh;
+    width: 45%;
+}
+
+#inv {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cart {
+    display: inline-flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+#sip {
+    font-size: 60px;
+}
+
+/* responsiveness */
+@media screen and (min-width:1000px) {
+    #cart {
+        display: block;
+    }
+
+    #tele {
+        height: 20vh;
+        width: 25%;
+    }
+
+    #sem {
+        display: flex;
+    }
+
+    #divs {
+        display: block;
+        justify-content: space-around;
+        /* margin-top: 100px; */
+    }
+
+}
+
+/* responsiveness ends */
+#invest {
+    /* align-items: center; */
+    margin: 15px;
+    display: block;
+}
+
+#icons {
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#divs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+#up {
+    text-align: start;
+    background-color: rgba(248, 248, 244, 0.979);
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+}
+
+#h4 {
+    text-align: justify;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+#vest {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    color: black;
+}
