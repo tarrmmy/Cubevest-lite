@@ -117,7 +117,7 @@ input:focus, input.form-control:focus {
   -webkit-box-shadow: none;
 }
 
-.btn {
+.log {
   background-color: #0d60d8;
   text-transform: uppercase;
   padding: 10px;
@@ -126,11 +126,11 @@ input:focus, input.form-control:focus {
   width: 90%;
 }
 
-.btn:hover{
+.log:hover{
   background-color: #062863;
 }
 
-.btn:focus{
+.log:focus{
   outline:none !important;
   outline-width: 0 !important;
   box-shadow: none;

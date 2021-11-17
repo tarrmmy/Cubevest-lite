@@ -7,7 +7,7 @@ const target = () => {
     return (
         <div>
             <Nav />
-            gfscgfcghcghhgdcgdcg
+           <h1>this is target</h1>
         </div>
     )
 }

@@ -7,7 +7,7 @@ const regular = () => {
     return (
         <div>
            <Nav />
-           <h1>wetinn be thisewmneijwqk</h1>
+           <h1>this is regular</h1>
         </div>
     )
 }

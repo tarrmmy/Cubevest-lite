@@ -1,0 +1,46 @@
+
+.navbar {
+    background-color: white;
+}
+
+.nav-link {
+    line-height: 35px;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 0%;
+    font-size: 25px;
+    font-weight: 900;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.sign {
+    color:black;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 25%;
+    background-color: white;
+}
+.sign:hover{
+    border:1px solid #0d60d8;
+    color:#0d60d8;
+    background-color: white;
+}
+
+.create {
+    background-color: black;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.create:hover{
+    background-color: #0d60d8;
+    transition: 1s
+}
+
+.right {
+    display: flex;
+    width: 35%;
+    margin-top: -10px;
+    margin-right: 50px;
+}

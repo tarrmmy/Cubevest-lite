@@ -1,0 +1,23 @@
+* h1{
+ font-weight: 900;
+}
+
+.secondfooter{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .secondfooter-left {
+ 
+} */
+
+.secondfooter-right {
+    text-align: justify;
+  margin-left: 100px;
+}
+
+.close {
+    margin-top: 10px;
+}

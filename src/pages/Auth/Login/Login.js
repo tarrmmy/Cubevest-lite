@@ -56,7 +56,7 @@ const Login = () => {
                     <label for="inputPassword4" className="down form-label">Password</label>
                     <input type="password" className="form-control" id="inputPassword4"/>        
             </form>
-            <button type="button" className="btn btn-primary">log in</button>
+            <button type="button" className="btn btn-primary log">log in</button>
            </div>
          </div>
                   <div className='footer'>
