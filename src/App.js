@@ -14,7 +14,7 @@ import Safe from './pages/Landing/safe/safe';
 import Invest from './pages/Landing/invest/invest';
 import Regular from './pages/Landing/regular/regular';
 import Target from './pages/Landing/target/target';
-
+import Footer from './components/Footer/Footer';
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
 
@@ -34,6 +34,7 @@ function App() {
         <Route component = {Safe} path="/safe" />
         <Route component = {Target} path="/target" />
         <Route component = {Regular} path="/regular" />
+        <Route component = {Footer} path="/Footer" />
         <Redirect from="*" to="/" />
       </Switch>
     </Router>

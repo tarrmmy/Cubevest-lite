@@ -56,7 +56,7 @@ const Signup = () => {
           </select>
         </div>
 
-        <button>CREATE ACCOUNT</button>
+        <button className="button">CREATE ACCOUNT</button>
      </p>
      {/* container ends */}
 

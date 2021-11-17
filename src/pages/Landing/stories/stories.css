@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.a {
+    display: inline-block;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.love {
+    text-align: justify;
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
+.story {
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.but {
+    width: 210px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.First {
+    display: inline-flex;
+    margin-top: 150px;
+}
+
+.pic {
+    height: 550px;
+    width: 700px;
+}
+
+.img {
+    margin-left: 170px;
+}
+
+.recent {
+    margin-top: 350px;
+    font-size: 70px;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: rgba(248, 248, 244, 0.979);
+    border: none;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+/* .card {
+    text-align: justify;
+} */
+.card-text {
+    text-align: justify;
+}
+
+.card-img-top {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#set {
+    margin: 0 auto;
+}

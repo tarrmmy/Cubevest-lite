@@ -89,7 +89,7 @@ h5 {
     margin-top: 10px;
 }
 
-button {
+.button {
     height: 60px;
     width: 84%;
     margin-left: 5px;
@@ -102,7 +102,7 @@ button {
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-button:hover {
+.button:hover {
     background-color: #062863;
 }
 
