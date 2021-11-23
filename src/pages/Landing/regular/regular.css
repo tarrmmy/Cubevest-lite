@@ -1,0 +1,92 @@
+*h1 {
+    font-weight: 900;
+}
+
+.regular {
+    margin-top: 170px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.regular-left {
+    text-align: justify;
+   flex: 4;
+   margin-left: 50px;
+}
+
+.regular-right {
+  flex: 6;
+}
+
+.regular-right > img {
+    height: 550px;
+    width: 250px;
+    z-index: 1;
+}
+
+#today {
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border: none; 
+   background-color: #0d60d8;
+}
+
+.thinking {
+    margin: 150px 30px 0px 30px;
+}
+
+.thinking-center {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.thinking-map {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 auto;
+   width: auto;
+   height: auto;
+}
+
+.think-design {
+    padding: 30px;
+    border-radius:5px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    background-color: rgb(245, 246, 255);
+    width:auto;
+    height:auto;  
+}
+.small-small {
+    margin-top: 100px;
+    background-color:#0d60d8;
+    color: white;
+    width: 100%; 
+    height: 300px;
+}
+
+.small-small > h1 {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.small-small > p {
+    width: 50%;
+    font-weight: 600;
+    margin: 0 auto;
+    color: white;
+}
+.different1 {
+    color: black;
+    padding-top: 50px;
+    font-weight: 900;
+}

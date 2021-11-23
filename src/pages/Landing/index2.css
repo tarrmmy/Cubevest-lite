@@ -25,6 +25,21 @@
     align-items: center;
 }
 
+.free{
+    border-radius:10px ;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+}
+.free:hover{
+ background-color: #0d60d8;
+ border: 2px solid #0d60d8;
+ transition: 1s;
+}
+
+
 .security {
     display: flex;
     margin-top: 200px;
@@ -57,12 +72,15 @@
 
 #start-saving{
     border-radius:10px ;
+    color: white;
+    border: 2px solid black;
     background-color: black;
     height: 50px;
-    width: 131px;
+    width: 120px;
 }
 #start-saving:hover{
  background-color: #0d60d8;
+ border: 2px solid #0d60d8;
  transition: 1s;
 }
 
