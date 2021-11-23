@@ -5,38 +5,16 @@ import './faq.css'
 
 const Faq = () => {
     return (
-      <div>
-          <Nav />
-          <h1>Frequently Asked Questions (FAQs)</h1>
-
-        <input type="text" placeholder="Search for a question"/>
-        {/* tank */}
         <div>
-        {/* box A */}
-         <div className="Box">
+            <Nav />
+            <h1 id="fresh">Frequently Asked Questions (FAQs)</h1>
 
+            <input type="text" placeholder="Search for a question"/>
+                
+            
 
-
-
-         </div>
-        {/* box A ends */}
-
-        {/* box B */}
-         <div className="sack">
-
-
-
-
-         </div>
-         {/* box B ends */}
-        
-
-
-
-        </div>
-    {/* tank ends */}
-
-        </div>
+       
+       </div>
     )
 }
 

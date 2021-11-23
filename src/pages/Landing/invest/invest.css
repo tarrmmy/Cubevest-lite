@@ -1,4 +1,4 @@
-h1 {
+#on-the-go {
     color: black;
     font-size: 45px;
 }
@@ -15,11 +15,11 @@ h1 {
 }
 
 #telephone {
-    height: 100vh;
-
+    height: 95vh;
+    width: 300px;
 }
 
-#sem {
+#semin {
     display: block;
 }
 
@@ -33,10 +33,16 @@ h1 {
     margin: 0 auto;
 }
 
-.cart {
-    display: inline-flex;
-    justify-content: space-between;
+#investment {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.Time {
+    display: flex;
+    justify-content: space-around;
     margin-bottom: 100px;
+    margin-top: 150px;
 }
 
 #sip {
@@ -73,7 +79,7 @@ h1 {
     display: block;
 }
 
-#icons {
+#up1 {
     height: 50px;
     width: 50px;
     margin-left: 30px;
@@ -92,18 +98,62 @@ h1 {
     border-radius: 15px;
     height: 300px;
     width: 400px;
+    font-family: 'DM Sans', sans-serif;
 }
 
-#h4 {
+#up3 {
     text-align: justify;
     margin-left: 30px;
     font-size: 20px;
 }
 
-#vest {
+#up2 {
     text-align: left;
     margin-left: 30px;
     font-size: 27px;
     font-weight: bold;
     color: black;
+}
+
+#cent {
+    margin-top: 50px;
+    font-size: 60px;
+}
+
+.patterny {
+    text-align: center;
+    margin: auto 0;
+}
+
+.patterny-A {
+    font-size: 40px;
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+.patterny-B {
+    text-align: justify;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#Deck {
+    display: block;
+}
+
+#DeckA {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#DeckB {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#card-img {
+    height: 100px;
+    width: 300px;
 }

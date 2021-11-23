@@ -1,3 +1,8 @@
+#foot {
+    margin-top: 100px;
+
+}
+
 .camp {
     display: flex;
     justify-content: space-around;
@@ -33,7 +38,7 @@
 .cap {
     display: block;
     text-align: justify;
-    font-family: DM Sans, sans-serif !important;
+    font-family: 'DM Sans', sans-serif;
     ;
 }
 
@@ -91,12 +96,12 @@
 
 .hit {
     margin-top: 15px;
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .hit1 {
     margin-top: 15px;
-    font-family: sans-serif;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .hit1:hover {

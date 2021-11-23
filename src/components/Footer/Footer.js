@@ -6,7 +6,7 @@ import techcrunch from './techcrunch.png'
 
 const Footer = () => {
     return (
-        <div>
+        <div id="foot">
             {/* A */}
             <div className="camp">
 
