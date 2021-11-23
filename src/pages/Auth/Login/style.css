@@ -90,6 +90,9 @@ font-family: 'Zen Maru Gothic', sans-serif;
   margin-bottom: 30px;
   text-align: justify;  
 }
+.inputPassword4 {
+font-size: 40px;
+}
 
 .form-label {
   margin-left: 20px;
@@ -104,6 +107,7 @@ font-family: 'Zen Maru Gothic', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
   width: 90%;
+  height: 50%;
   text-align: left;
   padding: 15px;
 }

@@ -16,31 +16,38 @@
 
 .sign {
     color:black;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
-    width: 25%;
+    width: 100px;
+    height: 50px;
     background-color: white;
 }
 .sign:hover{
-    border:1px solid #0d60d8;
+    border:2px solid #0d60d8;
     color:#0d60d8;
     background-color: white;
 }
 
 .create {
+    color: white;
+    border: 2px solid black;
     background-color: black;
     border-radius: 10px;
-    width: 50%;
+    margin-left: 10px;
+    width: 200px;
+    height: 50px;
 }
 
 .create:hover{
+    border: none;
     background-color: #0d60d8;
     transition: 1s
 }
 
 .right {
     display: flex;
-    width: 35%;
-    margin-top: -10px;
-    margin-right: 50px;
+    margin-right: 80px;
+    /* width: 35%; */
+    /* margin-top: -10px;
+    margin-right: 50px; */
 }

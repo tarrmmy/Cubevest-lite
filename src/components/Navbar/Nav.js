@@ -35,8 +35,8 @@ const Nav = () => {
       </ul>
 
       <div className='right'>
-          <button className='sign'>Sign in</button>
-          <button className='create'>Create free account</button>
+        <a href='/login'><button className='sign'>Sign in</button></a>
+        <a href='/signup'><button className='create'>Create free account</button></a>
       </div>
 
 

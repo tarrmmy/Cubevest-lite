@@ -5,6 +5,7 @@ import headerImg from './headerImg.png';
 import security from './security.png';
 import invest from './invest.png'
 import Secondfooter from '../../components/Secondfooter/Secondfooter';
+import Footer from '../../components/Footer/Footer';
 
 
 const index = () => {
@@ -33,7 +34,7 @@ const index = () => {
           <div className='landing-wrapper-left'>                     
            <h1 className='text-start'>The Better Way <br/> to Save & Invest.</h1>
            <p className='text-start'>PiggyVest helps over 3 million customers achieve their financial <br/> goals by helping them save and invest with ease.</p>
-           <button className='create'>Create free account</button>       
+           <button className='free'>Create free account</button>       
            </div>                
            <div className='landing-wrapper-right'>
              <img src={headerImg}></img>
@@ -81,6 +82,7 @@ const index = () => {
             </div>
           </div>
           <Secondfooter />
+          <Footer />
     </div>    
   )
 }
