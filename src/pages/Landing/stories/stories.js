@@ -7,28 +7,28 @@ import tag from './tag.jpg'
 import ben from './ben.jpg'
 import pet from './pet.jpg'
 import muh from './muh.jpg'
-import Secondfooter from '../../../components/Secondfooter/Secondfooter';
+import single from './single.png'
 import  Footer from '../../../components/Footer/Footer';
 const stories = () => {
   const Arc = [
     {
-      image: {tag},
+      image: tag,
       name: 'MUIZ MBE',
-      content: 'Wow! Where has Cubevest been all my adult life?.... I wish I knew about<br/>Cubevest in my early days.'
+      content: 'Wow! Where has Cubevest been all my adult life?.... I wish I knew about Cubevest in my early days.'
 
     },
     {
-      image: {pet},
+      image: pet,
       name: 'Antony',
       content: 'I used to have a problem of spending money on the go. When my brother told me about Piggyvest I was reluctant. But I am happy he.'
     },
     {
-      image: {ben},
+      image: ben,
       name: 'Samantha',
       content: 'PiggyVest has helped my life truly in many ways. I was kinda restless, helpless, but PiggyVest gave me the.'
     },
     {
-      image: {muh},
+      image: muh,
       name: 'Dave',
       content: 'PiggyVest has helped my life truly in many ways. I was kinda restless, helpless, but PiggyVest gave me the.'
     }
@@ -59,9 +59,9 @@ const stories = () => {
         {/* <div className="cards"> */}
 
             {Arc.map(rep => (
-          <div class="card" style={{width: "20rem",height:"350px"}}>
+          <div id="carddd" class="card" style={{width: "20rem",height:"350px"}}>
              
-                 <img id="photo-img"  src={tag} class="card-img-top" alt="..."/>
+                 <img id="photo-img"  src={rep.image} class="card-img-top" alt="..."/>
               <h5 className="title">{rep.name}</h5>
               <div class="card-body">
               <p class="card-text">{rep.content}</p>
@@ -70,35 +70,19 @@ const stories = () => {
           </div>
             ))}
 
-          {/* <div class="card" style={{width: "20rem",height:"350px"}}>
-              <img id="photo-img" src={pet} class="card-img-top" alt="..."/>
-              <h5 className="title"> Sammy K</h5>
-              <div class="card-body">
-              <p class="card-text">I used to have a problem of spending<br/>money on the go. When my brother<br/>told me about Piggyvest I was reluctant. But I am happy he.</p>
+          <div className='secondfooter'>
+              <div className='secondfooter-left'>
+              <img src={single}/>
+              </div>
+              <div className='secondfooter-right'>
+                  <h1 className='text-start'>3 Million + customers</h1>
+                  <p className='text-start'>Since launching in 2016, over 3,000,000 people have <br/>
+                    used PiggyVest to manage their money better, avoid <br/>
+                    over-spending and be more accountable.</p>
+                  <a href='/signup'><button className='close'>Create free account</button></a>
               </div>
           </div>
-
-          <div class="card" style={{width: "20rem",height:"350px"}}>
-              <img id="photo-img" src={ben} class="card-img-top" alt="..."/>
-              <h5 className="title">Ibraheem</h5>
-              <div class="card-body">
-              <p class="card-text">PiggyVest has helped my life truly in<br/>many ways. I was kinda restless,<br/>helpless, but PiggyVest gave me the.</p>
-              </div>
-          </div> */}
-
-        {/* </div> */}
-
-        {/* <div>
-          <div id="set" class="card" style={{width: "20rem",height:"350px"}}>
-               <img id="photo-img" src={muh} class="card-img-top" alt="..."/>
-               <h5 className="title">Ibraheem</h5>
-              <div class="card-body">
-                <p class="card-text">PiggyVest has helped my life truly in<br/>many ways. I was kinda restless,<br/>helpless, but PiggyVest gave me the.</p>
-              </div>
-          </div>
-        </div> */}
-        {/* card ends */}
-        <Secondfooter/>
+          
         <Footer/>
       </div>
     )

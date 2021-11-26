@@ -14,35 +14,88 @@ import herdsman from './herdsman.jpg'
 import orange from './orange.jpg'
 import potato from './potato.jpg'
 import seed from './seed.jpg'
-import { Card } from 'antd';
+import Secondfooter from '../../../components/Secondfooter/Secondfooter';
+import Footer from '../../../components/Footer/Footer';
+import backg from './backg.png'
 
 const invest = () => {
-    const { Meta } = Card;
-        // const Thinking = [
-        //     {
-        //     img:{},
-        //     name:'Save automatically',
-        //     text:'Choose between automatic daily, <br/>weekly or monthly savings. Once you choose, our system does the rest for you. You’re in control, and can always change your settings anytime.'
-        //     },
-        // ]
+    const Studio = [
+        {
+            photos:orange,
+            topic:'Credit Financing: Recyclan Global',
+            Price:'#5000',
+            numb:'2345',
+            per:'per unit',
+            investors:'Investors',
+
+        },
+        {
+            photos:cashew,
+            topic:'Cashew Nut Investment',
+            Price:'#5000',
+            numb:'1257',
+            per:'per unit',
+            investors:'Investors',
+
+        },
+        {
+            photos:cassava,
+            topic:'Cassava Farmland Investment',
+            Price:'#5000',
+            numb:'3011',
+            per:'per unit',
+            investors:'Investors',
+
+        },
+        {
+            photos:potato,
+            topic:'Sweet Potato Farmland Investment',
+            Price:'#5000',
+            numb:'1875',
+            per:'per unit',
+            investors:'Investors',
+
+        },
+        {
+            photos:herdsman,
+            topic:'Cattle Herder Stock Program Investment',
+            Price:'#5000',
+            numb:'2017',
+            per:'per unit',
+            investors:'Investors',
+
+        },
+        {
+            photos:seed,
+            topic:'Seasame Seed Farmland Investment',
+            Price:'#5000', 
+            numb:'2111',
+            per:'per unit',
+            investors:'Investors',   
+        }
+
+    ]
     return (
         <div>
           <Nav />
-            <div className="Time">
-
-                <div id="invest">
-
-                  <h1 id="on-the-go">Invest on the go.</h1>
-                  <h5 className="text-center">Invest securely and confidently on the go.<br/> Up to 25% returns, 6-12 month duration.</h5>
-                  <button className="butt">Start Saving Today</button>
-                
+            <div className='target'>
+                <div className='target-left'>
+                 
+                 <h1 className='text-start'>Invest on the go.</h1>
+                 <p className='text-start'>Invest securely and confidently on the go.<br/> Up to 25% returns, 6-12 month duration.</p>
+                 <button className="invest-butt">Start Saving Today</button>
+               
                 </div>
-               <img id="telephone" src={phone} />
-               {/* <img id="tele" src={card1}/>
-               <img id="tele" src={card2}/> */}
+
+                <div className='target-right'>
+                 
+                 <img src={phone}></img>
+               
+                </div>
+
             </div>
 
-              <div id="semin">  
+                <div id="semin">  
 
                   <h1 id="sip">Simple investments with great returns</h1>
 
@@ -72,70 +125,55 @@ const invest = () => {
                 </div>
                 
             </div>   
-
-            <div className="patterny">
-                <div className="patterny-A">We’ve made it easier for<br/>anyone to get started.</div>
-                <div className="patterny-B">With as little as NGN5000, you can now access pre-vetted<br/>low-medium risk primary and secondary investment<br/>opportunities. No hidden fees/charges. Thorough due<br/>diligence and pre-vetting on all investments are carried<br/>out for maximum safety.</div>
+             {/* divs ends */}
+            <div className='Royal'>
+                <div id="Royal-text">
+                    <h1>We’ve made it easier for<br/>anyone to get started.</h1>
+                    <p>With as little as NGN5000, you can now access pre-vetted<br/>low-medium risk primary and secondary investment<br/>opportunities. No hidden fees/charges. Thorough due<br/>diligence and pre-vetting on all investments are carried<br/>out for maximum safety.</p>
+                </div>
+                <img src={backg} id="Royal-img"/>
             </div>
 
             <h1 id="cent">Recent Opportunities on Investify</h1>
-            {/* bottom cards */}
-            <div id="Deck">
+            
+            <div className='challenges-map'>
+                <div className="row row-cols-1 row-cols-md-3 g-4">      
+                    {Studio.map( studio => (
+                    <div className="col">
+                        <div id="Book" className="card">
+                            <img src={studio.photos} className="card-img-top" id="top-img" alt="photo"/>
+                            <div className="card-body">
 
-                <div id="DeckA">
+                                <h2 id="cad" className="card-title">{studio.topic}</h2>
+                                <div id='roww'>
 
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={orange} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
+                                    <p id="roww1" className='text col-auto mb-20'>{studio.Price}</p>
+                                    <p id="roww1" className='text col-auto mb-20'>{studio.numb}</p>
+                               
+                                </div>
+
+                                <div id='rowww'>
+
+                                    <p id="rowww1" className='text col-auto mb-20'>{studio.per}</p> 
+                                    <p id="rowww1" className='text col-auto mb-20'>{studio.investors}</p> 
+                                
+                                </div>
+                            
+                            </div>
+                        
                         </div>
-                    </div>
-
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={cashew} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
-                        </div>
-                    </div>
-
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={cassava} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
-                        </div>
-                    </div>
-                
-                </div> 
-
-             {/* DeckB */}
-                <div id="DeckB">
-
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={potato} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
-                        </div>
-                    </div>
-
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={herdsman} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
-                        </div>
-                    </div>
-
-                    <div class="card" style={{width: "20rem",height:"350px"}}>
-                        <img id="card-img" src={seed} class="card-img-top" alt="..."/>
-                        <div class="card-body">
-                         <p class="card-text"></p>
-                        </div>
-                    </div>
                     
+                    </div> 
+                   ))}
+               
                 </div>
-            </div>    
-            {/* bottom ends */}
+            
+            </div>
+            <Secondfooter />
+            <Footer />
         </div>
     )
 }
+
 
 export default invest;

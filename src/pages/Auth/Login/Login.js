@@ -20,19 +20,32 @@
 //   )
 // }
 
-// const mapStateToProp = ({ auth, dispatch }) => ({
-//   dispatch,
-//   login: auth
-// })
-
-// export default connect(mapStateToProp)(Login)
-
-
-import React from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
 // import { Link } from 'react-router-dom';
 import './style.css'
 
-const Login = () => {
+const mapStateToProp = ({ auth, dispatch }) => ({
+  dispatch,
+  login: auth
+})
+
+const Login = ({dispatch, auth}) => {
+  const [data, setdata] = useState({email:'',password:''})
+
+  const handleChange =(e)=>{
+    const {value , name} = e.target
+    setdata({...data, [name]:value})
+  }
+console.log(auth)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch({
+      type:"auth/CHANGE_NAME",
+      payload:{name:"firstname"}
+    })
+  }
   return (
     <div id='background'>
     
@@ -48,15 +61,15 @@ const Login = () => {
            </div>
 
            <div className='form-input'>
-           <form className='form-input-email-password'>
+           <form className='form-input-email-password' onSubmit={handleSubmit}>
                        
-                    <label for="inputEmail4" className="form-label">Email or Phone Number</label>
-                    <input type="email" className="form-control" id="inputEmail4"/>
-                       
-                    <label for="inputPassword4" className="down form-label">Password</label>
-                    <input type="password" className="form-control" id="inputPassword4"/>        
+              <label for="inputEmail4" className="form-label">Email or Phone Number</label>
+              <input name="email" onChange={handleChange} type="email" className="form-control" id="inputEmail4"/>
+                  
+              <label for="inputPassword4" className="down form-label">Password</label>
+              <input name="password" onChange={handleChange} type="password" className="form-control" id="inputPassword4"/>        
+              <button type="submit" className="btn btn-primary log">log in</button>
             </form>
-            <button type="button" className="btn btn-primary log">log in</button>
            </div>
          </div>
                   <div className='footer'>
@@ -67,7 +80,7 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default connect(mapStateToProp)(Login)
 
 
 

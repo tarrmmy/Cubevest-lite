@@ -17,3 +17,8 @@ input {
     width: 70%;
     border-radius: 10px;
 }
+
+#accordionExample {
+    margin-top: 50px;
+    width: 60%;
+}

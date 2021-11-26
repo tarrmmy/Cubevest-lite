@@ -1,9 +1,12 @@
-#on-the-go {
+#invest-go {
     color: black;
-    font-size: 45px;
+    font-size: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+
 }
 
-.butt {
+.invest-butt {
     width: 210px;
     height: 65px;
     border-radius: 10px;
@@ -31,6 +34,12 @@
 #inv {
     align-items: center;
     margin: 0 auto;
+}
+
+#invest {
+    font-family: 'DM Sans', sans-serif;
+    margin-right: 50px;
+    display: block;
 }
 
 #investment {
@@ -73,11 +82,6 @@
 }
 
 /* responsiveness ends */
-#invest {
-    /* align-items: center; */
-    margin: 15px;
-    display: block;
-}
 
 #up1 {
     height: 50px;
@@ -118,26 +122,46 @@
 #cent {
     margin-top: 50px;
     font-size: 60px;
+    margin-bottom: 100px;
 }
 
-.patterny {
-    text-align: center;
-    margin: auto 0;
-}
-
-.patterny-A {
-    font-size: 40px;
+.Royal {
+    margin-top: 100px;
+    background-color: #7913E5;
+    color: white;
+    width: 100%;
+    height: 400px;
     text-align: justify;
-    font-family: 'DM Sans', sans-serif;
-
+    display: flex;
+    justify-content: space-around;
 }
 
-.patterny-B {
+#Royal-text {
     text-align: justify;
-    font-family: 'DM Sans', sans-serif;
 }
 
-#Deck {
+.Royal>h1 {
+    width: 60%;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Royal>p {
+    width: 50%;
+    font-weight: 600;
+    color: white;
+}
+
+#Royal-img {
+    height: 100%;
+    width: 45%;
+    margin-right: -98px;
+}
+
+/* 
+
+ #Deck {
     display: block;
 }
 
@@ -151,9 +175,64 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-}
+} 
 
 #card-img {
     height: 100px;
     width: 300px;
+} */
+
+#top-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 40%;
+    border-radius: 0;
+    border-radius: 20px 20px 0 0;
 }
+
+#Book {
+    height: 400px;
+    width: 360px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#Book:hover {
+    box-shadow: 3px 3px 3px 3px rgb(194, 189, 189);
+}
+
+#cad {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+#roww {
+    display: flex;
+    justify-content: space-around;
+}
+
+#roww1 {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+
+#rowww {
+    display: flex;
+    justify-content: space-around;
+}
+
+#rowww1 {
+    font-size: 18px;
+    margin-top: -20px;
+    font-weight: 80;
+}
+
+/* .text {
+    font-weight: bolder;
+    font-size: 20px;
+    justify-content: space-evenly;
+    text-align: left;
+} */
