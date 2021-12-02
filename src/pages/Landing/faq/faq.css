@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#fresh {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+input {
+    height: 80px;
+    width: 70%;
+    border-radius: 10px;
+}
+
+#accordionExample {
+    margin-top: 50px;
+    width: 60%;
+}

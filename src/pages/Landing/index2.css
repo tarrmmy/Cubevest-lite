@@ -1,0 +1,147 @@
+ h1{
+ font-weight: 900;
+}
+
+.landing-wrapper {
+    display: flex;
+    margin-top: 200px;
+}
+
+.landing-wrapper-left {
+    flex: 4;
+    text-align: justify;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.landing-wrapper-left>h1 {
+    font-weight: 900;
+    font-size: 70px;
+}
+
+.landing-wrapper-right {
+    flex: 6;
+    justify-content: center;
+    align-items: center;
+}
+
+.free{
+    border-radius:10px ;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    height: 50px;
+    width: 200px;
+}
+.free:hover{
+ background-color: #0d60d8;
+ border: 2px solid #0d60d8;
+ transition: 1s;
+}
+
+
+.security {
+    display: flex;
+    margin-top: 200px;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+
+.security-img {
+    width: 100px;
+    height: 120px;
+    margin-right: 40px;
+}
+
+.security-box {
+    text-align: left;
+    display: block;
+}
+
+.learn {
+    color: blue;
+    font-weight:bold;
+}
+
+.savings-category{
+    display: flex;
+    margin-top: 100px;
+    justify-content:space-around;
+}
+
+#start-saving{
+    border-radius:10px ;
+    color: white;
+    border: 2px solid black;
+    background-color: black;
+    height: 50px;
+    width: 120px;
+}
+#start-saving:hover{
+ background-color: #0d60d8;
+ border: 2px solid #0d60d8;
+ transition: 1s;
+}
+
+.build-savings-left {
+    text-align: justify;
+}
+
+.build-savings-right {
+    display: flex;
+    margin-left:10px ;
+}
+
+.cubevest {
+    padding: 15px;
+    border-radius:5px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    background-color: rgb(245, 246, 255);
+    width: 400px;
+    height: auto;
+    margin: 10px;
+}
+
+.cubevest-name {
+  font-weight: 800;
+  margin-top:20px ;
+  margin-bottom: 20px;
+}
+
+.cubevest-text{
+ margin-bottom: 30px;
+}
+
+.cubevest-title{
+ font-weight: 600;
+ text-align: left;
+}
+
+.investment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.investment-left {
+    margin-right: 100px;
+}
+
+.invest-img {
+   height:550px ;
+   width: 250px;
+}
+
+.investment-right {
+    display: block;
+    text-align: justify;
+}
+
+.investment-right > h1{
+    margin-bottom: 20px;
+}
+

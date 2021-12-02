@@ -90,6 +90,9 @@ font-family: 'Zen Maru Gothic', sans-serif;
   margin-bottom: 30px;
   text-align: justify;  
 }
+.inputPassword4 {
+font-size: 40px;
+}
 
 .form-label {
   margin-left: 20px;
@@ -104,6 +107,7 @@ font-family: 'Zen Maru Gothic', sans-serif;
   margin-left: 20px;
   margin-right: 20px;
   width: 90%;
+  height: 50%;
   text-align: left;
   padding: 15px;
 }
@@ -117,7 +121,7 @@ input:focus, input.form-control:focus {
   -webkit-box-shadow: none;
 }
 
-.btn {
+.log {
   background-color: #0d60d8;
   text-transform: uppercase;
   padding: 10px;
@@ -126,11 +130,11 @@ input:focus, input.form-control:focus {
   width: 90%;
 }
 
-.btn:hover{
+.log:hover{
   background-color: #062863;
 }
 
-.btn:focus{
+.log:focus{
   outline:none !important;
   outline-width: 0 !important;
   box-shadow: none;

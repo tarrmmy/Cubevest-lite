@@ -1,12 +1,15 @@
 * {
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 17px;
+    padding: 0;
+    margin: 0;
 }
 
 #head {
     background-color: #062863;
     color: black;
-    height: 157vh;
+    height: 175vh;
+    width: 100%;
 }
 
 #create {
@@ -24,7 +27,7 @@
 #container {
     background-color: white;
     font-family: Karla sans-serif;
-    height: 125vh;
+    height: 135vh;
     width: 67vh;
     margin: 0 auto;
     border-radius: 20px 20px 20px 0;
@@ -86,7 +89,7 @@ h5 {
     margin-top: 10px;
 }
 
-button {
+.button {
     height: 60px;
     width: 84%;
     margin-left: 5px;
@@ -99,7 +102,7 @@ button {
     font-family: 'Zen Maru Gothic', sans-serif;
 }
 
-button:hover {
+.button:hover {
     background-color: #062863;
 }
 

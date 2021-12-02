@@ -6,9 +6,18 @@ export function* LOGOUT() {
   console.log("hello")
 }
 
+export function* LOGIN({payload}){
+  yield put({
+    type:"auth/SET_STATE",
+    payload:{name:"firstname"}
+  })
+  console.log("payload")
+}
+
 
 export default function* rootSaga() {
   yield all([
-    takeEvery(actions.LOGOUT, LOGOUT)
+    takeEvery(actions.LOGOUT, LOGOUT),
+    takeEvery(actions.LOGIN, LOGIN)
   ])
 }

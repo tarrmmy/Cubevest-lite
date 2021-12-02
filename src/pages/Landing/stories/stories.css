@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.First-A {
+    display: inline-block;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.love {
+    text-align: justify;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.story {
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.but {
+    width: 210px;
+    height: 65px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.First {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-around;
+}
+
+.pic {
+    height: 500px;
+    width: 650px;
+}
+
+.First-B {
+    margin-left: 170px;
+}
+
+.recent {
+    margin-top: 350px;
+    font-size: 70px;
+}
+
+#carddd {
+    border-radius: 10px;
+    background-color: rgba(248, 248, 244, 0.979);
+    border: none;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+
+}
+
+
+.card-text {
+    text-align: justify;
+}
+
+#photo-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+#set {
+    margin: 0 auto;
+}
+
+.title {
+    margin-top: 20px;
+}

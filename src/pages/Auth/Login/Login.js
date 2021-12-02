@@ -1,38 +1,24 @@
-// import React, { useState } from 'react'
-// import { connect } from 'react-redux'
-// import "./style.css";
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+// import { Link } from 'react-router-dom';
+import './style.css'
 
-// const Login = ({ login, dispatch }) => {
-//   const [state, setstate] = useState(0)
-//   const sayHello = (val) => {
-//     setstate(val++)
-//     dispatch({
-//       type: "auth/CHANGE_NAME",
-//       payload: { name: val }
-//     })
-//   }
+const Login = ({ dispatch, auth }) => {
+  const [data, setdata] = useState({ email: '', password: '' })
 
-//   return (
-//     <div className="cl">
-//       Welcome to login {login.name}
-//       <button onClick={() => sayHello(state)}>Change My Name</button>
-//     </div>
-//   )
-// }
+  const handleChange = (e) => {
+    const { value, name } = e.target
+    setdata({ ...data, [name]: value })
+  }
+  console.log(auth)
 
-// const mapStateToProp = ({ auth, dispatch }) => ({
-//   dispatch,
-//   login: auth
-// })
-
-// export default connect(mapStateToProp)(Login)
-
-
-import React from 'react';
-import "./style.css";
-
-
-const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch({
+      type: "auth/CHANGE_NAME",
+      payload: { name: "firstname" }
+    })
+  }
   return (
     <div id='background'>
 
@@ -67,4 +53,13 @@ const Login = () => {
   )
 }
 
-export default Login;
+const mapStateToProp = ({ auth, dispatch }) => ({
+  dispatch,
+  login: auth
+})
+
+
+export default Login
+
+
+
