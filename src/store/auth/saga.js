@@ -1,17 +1,30 @@
 import { all, takeEvery, put, call } from 'redux-saga/effects'
 import { actions } from './action'
+import {login} from '../service'
 
 export function* LOGOUT() {
   // const success = yield call(jwt.logout)
-  console.log("hello")
 }
 
 export function* LOGIN({payload}){
+  const {email, password} = payload
   yield put({
-    type:"auth/SET_STATE",
-    payload:{name:"firstname"}
+    type: 'auth/SET_STATE',
+    payload: {
+      loading: true,
+    },
   })
-  console.log("payload")
+  const success = yield call(login, email, password)
+  console.log(success)
+  if (success) {
+    yield put({
+      type: 'auth/SET_STATE',
+      payload: {
+        data: success,
+        loading:false
+      },
+    })
+  }
 }
 
 

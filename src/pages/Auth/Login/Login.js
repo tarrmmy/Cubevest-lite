@@ -1,32 +1,30 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
+import { actions } from '../../../store/auth/action';
 // import { Link } from 'react-router-dom';
 import './style.css'
 
-const Login = ({ dispatch, auth }) => {
+const Login = ({ dispatch, login }) => {
   const [data, setdata] = useState({ email: '', password: '' })
 
   const handleChange = (e) => {
     const { value, name } = e.target
     setdata({ ...data, [name]: value })
   }
-  console.log(auth)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch({
-      type: "auth/CHANGE_NAME",
-      payload: { name: "firstname" }
+      type: actions.LOGIN,
+      payload:data
     })
   }
   return (
     <div id='background'>
-
       <div className='header'>
         <i className="piggy fas fa-piggy-bank"></i>
         <h2>Cubevest-lite</h2>
       </div>
-
       <div className='form-space'>
         <div className='form-space-header'>
           <h1>Login to your account</h1>
@@ -34,15 +32,15 @@ const Login = ({ dispatch, auth }) => {
         </div>
 
         <div className='form-input'>
-          <form className='form-input-email-password'>
+          <form className='form-input-email-password' onSubmit={(e)=>handleSubmit(e)}>
 
             <label for="inputEmail4" className="form-label">Email or Phone Number</label>
-            <input type="email" className="form-control" id="inputEmail4" />
+            <input name="email" onChange={handleChange} type="email" className="form-control" id="inputEmail4" />
 
             <label for="inputPassword4" className="down form-label">Password</label>
-            <input type="password" className="form-control" id="inputPassword4" />
+            <input name="password" onChange={handleChange} type="password" className="form-control" id="inputPassword4" />
+            <button type="submit" className="btn btn-primary">log in</button>
           </form>
-          <button type="button" className="btn btn-primary">log in</button>
         </div>
       </div>
       <div className='footer'>
@@ -59,7 +57,7 @@ const mapStateToProp = ({ auth, dispatch }) => ({
 })
 
 
-export default Login
+export default connect(mapStateToProp)(Login)
 
 
 
