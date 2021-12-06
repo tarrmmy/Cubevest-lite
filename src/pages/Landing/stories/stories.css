@@ -11,7 +11,7 @@
 
 .love {
     text-align: justify;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'DM Sans', sans-serif;
 }
@@ -24,14 +24,19 @@
 }
 
 .but {
-    width: 210px;
-    height: 65px;
+    width: 170px;
+    height: 60px;
     border-radius: 10px;
     border: none;
     font-size: 20px;
     color: white;
     background-color: black;
     font-weight: bold;
+}
+
+.but:hover {
+    background-color: #0d60d8;
+    transition: 2s;
 }
 
 .First {
@@ -41,8 +46,8 @@
 }
 
 .pic {
-    height: 500px;
-    width: 650px;
+    height: 450px;
+    width: 600px;
 }
 
 .First-B {

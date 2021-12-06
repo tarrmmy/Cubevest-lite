@@ -27,7 +27,7 @@ import './style.css'
 
 const mapStateToProp = ({ auth, dispatch }) => ({
   dispatch,
-  login: auth
+  auth
 })
 
 const Login = ({dispatch, auth}) => {
@@ -36,14 +36,15 @@ const Login = ({dispatch, auth}) => {
   const handleChange =(e)=>{
     const {value , name} = e.target
     setdata({...data, [name]:value})
+   
   }
-console.log(auth)
-
+  
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log(e)
     dispatch({
-      type:"auth/CHANGE_NAME",
-      payload:{name:"firstname"}
+      type:"auth/LOGIN",
+      payload:data
     })
   }
   return (
@@ -61,7 +62,7 @@ console.log(auth)
            </div>
 
            <div className='form-input'>
-           <form className='form-input-email-password' onSubmit={handleSubmit}>
+           <form className='form-input-email-password' onSubmit={(e)=>handleSubmit(e)}>
                        
               <label for="inputEmail4" className="form-label">Email or Phone Number</label>
               <input name="email" onChange={handleChange} type="email" className="form-control" id="inputEmail4"/>
@@ -80,7 +81,7 @@ console.log(auth)
   )
 }
 
-export default connect(mapStateToProp)(Login)
+export default connect(mapStateToProp)(Login);
 
 
 

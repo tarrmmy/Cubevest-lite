@@ -15,6 +15,7 @@ import Invest from './pages/Landing/invest/invest';
 import Regular from './pages/Landing/regular/regular';
 import Target from './pages/Landing/target/target';
 import Footer from './components/Footer/Footer';
+import { Provider } from 'react-redux';
 const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
 
@@ -23,21 +24,23 @@ sagaMiddleware.run(saga)
 
 function App() {
   return (
-    <Router history={history}>
-      <Switch>
-        <Route component = {Landing} exact path="/" />
-        <Route component = {Signup} path="/signup" />
-        <Route component = {Login} path="/login" />
-        <Route component = {Faq} path="/faq" />
-        <Route component = {Invest} path="/invest" />
-        <Route component = {Stories} path="/stories" />
-        <Route component = {Safe} path="/safe" />
-        <Route component = {Target} path="/target" />
-        <Route component = {Regular} path="/regular" />
-        <Route component = {Footer} path="/Footer" />
-        <Redirect from="*" to="/" />
-      </Switch>
-    </Router>
+    <Provider store={store} >
+      <Router history={history}>
+        <Switch>
+          <Route component = {Landing} exact path="/" />
+          <Route component = {Signup} path="/signup" />
+          <Route component = {Login} path="/login" />
+          <Route component = {Faq} path="/faq" />
+          <Route component = {Invest} path="/invest" />
+          <Route component = {Stories} path="/stories" />
+          <Route component = {Safe} path="/safe" />
+          <Route component = {Target} path="/target" />
+          <Route component = {Regular} path="/regular" />
+          <Route component = {Footer} path="/Footer" />
+          <Redirect from="*" to="/" />
+        </Switch>
+      </Router>
+    </Provider>
   );
 }
 

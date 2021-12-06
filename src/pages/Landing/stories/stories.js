@@ -10,6 +10,7 @@ import muh from './muh.jpg'
 import single from './single.png'
 import  Footer from '../../../components/Footer/Footer';
 const stories = () => {
+  
   const Arc = [
     {
       image: tag,

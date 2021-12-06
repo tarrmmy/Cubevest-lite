@@ -17,62 +17,82 @@ import seed from './seed.jpg'
 import Secondfooter from '../../../components/Secondfooter/Secondfooter';
 import Footer from '../../../components/Footer/Footer';
 import backg from './backg.png'
+import { icons } from 'antd/lib/image/PreviewGroup';
 
 const invest = () => {
+    
+    // const Sort = [
+    //             {
+    //                 icons:icon1 ,
+    //                 head:'Investments simplified',
+    //                 content:'With minimum investments starting as low as N5,000, investment is no longer out of reach. Everyone is welcome.',
+    //             },
+    //             {
+    //                 icons: icon2,
+    //                 head:'Invest confidently',
+    //                 content:'All listed investments are properly due diligenced and highly secured opportunities.',
+    //             },
+    //             {
+    //                 icons:icon3 ,
+    //                 head:'Diversify your portfolio',
+    //                 content:'Invest in various industries such as fixed income instruments, agriculture, transportation, etc.',
+    //             },
+    // ]
+
     const Studio = [
-        {
-            photos:orange,
-            topic:'Credit Financing: Recyclan Global',
-            Price:'#5000',
-            numb:'2345',
-            per:'per unit',
-            investors:'Investors',
+                {
+                    photos:orange,
+                    topic:'Credit Financing: Recyclan Global',
+                    Price:'#5000',
+                    numb:'2345',
+                    per:'per unit',
+                    investors:'Investors',
 
-        },
-        {
-            photos:cashew,
-            topic:'Cashew Nut Investment',
-            Price:'#5000',
-            numb:'1257',
-            per:'per unit',
-            investors:'Investors',
+                },
+                {
+                    photos:cashew,
+                    topic:'Cashew Nut Investment',
+                    Price:'#5000',
+                    numb:'1257',
+                    per:'per unit',
+                    investors:'Investors',
 
-        },
-        {
-            photos:cassava,
-            topic:'Cassava Farmland Investment',
-            Price:'#5000',
-            numb:'3011',
-            per:'per unit',
-            investors:'Investors',
+                },
+                {
+                    photos:cassava,
+                    topic:'Cassava Farmland Investment',
+                    Price:'#5000',
+                    numb:'3011',
+                    per:'per unit',
+                    investors:'Investors',
 
-        },
-        {
-            photos:potato,
-            topic:'Sweet Potato Farmland Investment',
-            Price:'#5000',
-            numb:'1875',
-            per:'per unit',
-            investors:'Investors',
+                },
+                {
+                    photos:potato,
+                    topic:'Sweet Potato Farmland Investment',
+                    Price:'#5000',
+                    numb:'1875',
+                    per:'per unit',
+                    investors:'Investors',
 
-        },
-        {
-            photos:herdsman,
-            topic:'Cattle Herder Stock Program Investment',
-            Price:'#5000',
-            numb:'2017',
-            per:'per unit',
-            investors:'Investors',
+                },
+                {
+                    photos:herdsman,
+                    topic:'Cattle Herder Stock Program Investment',
+                    Price:'#5000',
+                    numb:'2017',
+                    per:'per unit',
+                    investors:'Investors',
 
-        },
-        {
-            photos:seed,
-            topic:'Seasame Seed Farmland Investment',
-            Price:'#5000', 
-            numb:'2111',
-            per:'per unit',
-            investors:'Investors',   
-        }
+                },
+                {
+                    photos:seed,
+                    topic:'Seasame Seed Farmland Investment',
+                    Price:'#5000', 
+                    numb:'2111',
+                    per:'per unit',
+                    investors:'Investors',   
+                }
 
     ]
     return (
@@ -89,7 +109,7 @@ const invest = () => {
 
                 <div className='target-right'>
                  
-                 <img src={phone}></img>
+                 <img src={phone}/>
                
                 </div>
 
@@ -124,14 +144,36 @@ const invest = () => {
                     <div id="up3">Invest in various industries such as<br/>fixed income instruments, agriculture,<br/>transportation, etc.</div>
                 </div>
                 
-            </div>   
+            </div>    
+            {/* <div id="card-board" >
+                <div style={{width: "20rem", height: "20rem"}}>
+                    {Sort.map(sort=>(
+                        <div>
+                            <img id="card-icons" src={sort.icons} />
+                            <div class="card-body">
+                                
+                                <h3 id="card-body1">{sort.head}</h3>
+                                <p id="card-body2" >{sort.content}</p>
+                            
+                            </div>
+                        </div>
+                    ))}
+                        
+                </div>
+            </div> */}
              {/* divs ends */}
+
+
             <div className='Royal'>
+
                 <div id="Royal-text">
+
                     <h1>We’ve made it easier for<br/>anyone to get started.</h1>
                     <p>With as little as NGN5000, you can now access pre-vetted<br/>low-medium risk primary and secondary investment<br/>opportunities. No hidden fees/charges. Thorough due<br/>diligence and pre-vetting on all investments are carried<br/>out for maximum safety.</p>
+                
                 </div>
                 <img src={backg} id="Royal-img"/>
+            
             </div>
 
             <h1 id="cent">Recent Opportunities on Investify</h1>
@@ -139,32 +181,36 @@ const invest = () => {
             <div className='challenges-map'>
                 <div className="row row-cols-1 row-cols-md-3 g-4">      
                     {Studio.map( studio => (
-                    <div className="col">
-                        <div id="Book" className="card">
-                            <img src={studio.photos} className="card-img-top" id="top-img" alt="photo"/>
-                            <div className="card-body">
 
-                                <h2 id="cad" className="card-title">{studio.topic}</h2>
-                                <div id='roww'>
+                        <div className="col">
 
-                                    <p id="roww1" className='text col-auto mb-20'>{studio.Price}</p>
-                                    <p id="roww1" className='text col-auto mb-20'>{studio.numb}</p>
-                               
-                                </div>
+                            <div id="Book" className="card">
 
-                                <div id='rowww'>
+                                <img src={studio.photos} className="card-img-top" id="top-img" alt="photo"/>
+                                <div className="card-body">
 
-                                    <p id="rowww1" className='text col-auto mb-20'>{studio.per}</p> 
-                                    <p id="rowww1" className='text col-auto mb-20'>{studio.investors}</p> 
+                                    <h2 id="cad" className="card-title">{studio.topic}</h2>
+                                    <div id='roww'>
+
+                                        <p id="roww1" className='text col-auto mb-20'>{studio.Price}</p>
+                                        <p id="roww1" className='text col-auto mb-20'>{studio.numb}</p>
+                                
+                                    </div>
+
+                                    <div id='rowww'>
+
+                                        <p id="rowww1" className='text col-auto mb-20'>{studio.per}</p> 
+                                        <p id="rowww1" className='text col-auto mb-20'>{studio.investors}</p> 
+                                    
+                                    </div>
                                 
                                 </div>
                             
                             </div>
                         
-                        </div>
-                    
-                    </div> 
-                   ))}
+                        </div> 
+                  
+                  ))}
                
                 </div>
             
