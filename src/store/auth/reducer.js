@@ -1,6 +1,7 @@
 import { actions } from './action'
 
 const initialState = {
+  data:{},
   id: '',
   name: 'Lukas Mase',
   role: '',

@@ -1,68 +1,84 @@
-import React from 'react'
-import {Link} from 'react-router-dom' 
+
+import { Link } from 'react-router-dom'
 import './Signup.css'
-// import { Router } from 'react-router'
-const Signup = () => {
+import { connect } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+//  import { Router } from 'react-router'
+
+
+const mapStateToProp = ({ auth, dispatch }) => ({
+  dispatch,
+  auth
+})
+const Signup = ({dispatch, auth}) => {
+  const [data, setdata] = useState({email:'',password:'',first_name:'',bvn:'', last_name:'', middle_name:'', phone_no:''})
+
+  const handleChange =(e)=>{
+    const {value , name} = e.target
+    setdata({...data, [name]:value})
+   
+  }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    dispatch({
+      type:"auth/SIGNUP",
+      payload:data
+    })
+  }
   return (
     <div id="head">
-     
       <h2 id="cube">Cubevest-lite</h2>
-     
-
-     {/* container starts */}
+      {/* container starts */}
       <p id="container">
         <div id="create">
           <h3>Create a Secure Account</h3>
           <h4>Welcome to the future of Savings & Investment</h4>
         </div>
-        <div className="Name">
-          <h5>Full Name</h5>
-          <input type="text" class="form-control" id="floatingInput" placeholder="Full Name"/>
-        </div>
-      
-        <div className="Name">
-          <h5>Email Address</h5>
-          <input type="email" class="form-control" id="floatingInput" placeholder="Email Address"/>
-        </div>
+        <form className='form-input-email-password' onSubmit={(e)=>handleSubmit(e)}>
+          <div className="Name">
+            <h5>first_name</h5>
+            <input onChange={handleChange} name="first_name" type="text" class="form-control" id="floatingInput" placeholder="Full Name" />
+          </div>
 
-        <div className="Name">
-          <h5>Phone Number</h5>
-          <input type="text" class="form-control" id="floatingInput" placeholder="Phone Number"/>
-        </div>  
+          <div className="Name">
+            <h5>last_name</h5>
+            <input onChange={handleChange} name="last_name" type="text" class="form-control" id="floatingInput" placeholder="Email Address" />
+          </div>
 
+          <div className="Name">
+            <h5>middle_name</h5>
+            <input onChange={handleChange} name="middle_name" type="text" class="form-control" id="floatingInput" placeholder="Phone Number" />
+          </div>
 
-        <div className="Name">
-          <h5>Password</h5>
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
-        </div>
+          <div className="Name">
+            <h5>email </h5>
+            <input onChange={handleChange} name="email" type="email" class="form-control" id="floatingPassword" placeholder="Password" />
+          </div>
 
-        <div className="Name">
-          <h5>Referrer Phone or Promo Code(Optional)</h5>
-          <input type="text" class="form-control" id="floatingInput" placeholder="Referrer Phone or Promo code"/>
-        </div>
-        <div>
-          <h5 className="How">How Did You Hear About Us?(Optional)</h5>
-          <select class="form-select" aria-label="Default select example" id="select">
-            <option className="option" selected>Click To Select</option>
-            <option value="1">Facebook</option>
-            <option value="2">Twitter</option>
-            <option value="3">Whatsapp</option>
-            <option value="4">Instagram</option>
-            <option value="5">Family/Friend/Co-worker</option>
-            <option value="6">Google Playstore</option>
-            <option value="7">Online Blog</option>
-            <option value="8">Local Newspapers</option>
-            <option value="9">Others</option>
-          </select>
-        </div>
+          <div className="Name">
+            <h5>phone_no</h5>
+            <input onChange={handleChange} name="phone_no" type="text" class="form-control" id="floatingPassword" placeholder="Password" />
+          </div>
 
-        <button className="button">CREATE ACCOUNT</button>
-     </p>
-     {/* container ends */}
+          <div className="Name">
+            <h5>bvn</h5>
+            <input onChange={handleChange} name="bvn" type="text" class="form-control" id="floatingPassword" placeholder="Password" />
+          </div>
 
-     <h4 className="bottom">Already have an account?<a className="log" href='/login'> Log in </a></h4>
+          <div className="Name">
+            <h5>password</h5>
+            <input onChange={handleChange} name="password" type="password" class="form-control" id="floatingInput" placeholder="Referrer Phone or Promo code" />
+          </div>
+
+          <button type="submit" className="button">{auth.loading? 'Loading...':'CREATE ACCOUNT'}</button>
+        </form>
+      </p>
+      {/* container ends */}
+
+      <h4 className="bottom">Already have an account?<a className="log" href='/login'> Log in </a></h4>
     </div>
   )
 }
 
-export default Signup;
+export default connect(mapStateToProp)(Signup);

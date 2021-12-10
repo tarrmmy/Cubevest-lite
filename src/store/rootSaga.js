@@ -5,6 +5,6 @@ import Dashboard from './dashboard/saga';
 export default function* rootSaga() {
   yield all([
     Auth(),
-    Dashboard()
+    // Dashboard()
   ])
-}
+};

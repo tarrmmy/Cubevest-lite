@@ -5,10 +5,10 @@ import reducers from './store/rootReducers'
 import Landing from './pages/Landing'
 import saga from './store/rootSaga';
 import createSagaMiddleware from '@redux-saga/core';
-import { Redirect, Route, Router, Switch } from 'react-router';
+import { Redirect, Route, Router, Switch } from 'react-router-dom';
 import Signup from './pages/Auth/Signup/Signup';
 import Login from './pages/Auth/Login/Login';
-import Faq  from './pages/Landing/faq/faq';
+import Faq from './pages/Landing/faq/faq';
 import Stories from './pages/Landing/stories/stories';
 import Safe from './pages/Landing/safe/safe';
 import Invest from './pages/Landing/invest/invest';
@@ -16,9 +16,9 @@ import Regular from './pages/Landing/regular/regular';
 import Target from './pages/Landing/target/target';
 import Footer from './components/Footer/Footer';
 import { Provider } from 'react-redux';
-const history = createBrowserHistory()
 const sagaMiddleware = createSagaMiddleware()
 
+export const history = createBrowserHistory()
 export const store = createStore(reducers, applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(saga)
 
