@@ -1,30 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
+  align-items: center;
+}
 
-/* font-family: 'Heebo', sans-serif;
-font-family: 'Lato', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Nunito', sans-serif;
-font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'PT Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Zen Maru Gothic', sans-serif;
- */
-
-
- *{
-   margin: 0;
-   padding: 0;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-   -webkit-user-drag: none;
-  -webkit-app-region:none;
- }
-
-#background {
+.background {
   background-color: #062863;
-  height: 100vh;
+  height: 120vh;
   color: white;
   width: 100%;
 }
@@ -33,15 +20,15 @@ font-family: 'Zen Maru Gothic', sans-serif;
   display: flex;
   text-align: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 0px 10px 0px 0px;
   padding-top: 6vh;
   font-family: 'Zen Maru Gothic', sans-serif;
-  font-size:2rem;
+  font-size: 2rem;
   justify-content: center;
   margin-bottom: 45px;
 }
 
-.header > h2 {
+.header>h2 {
   margin-top: 10px;
 }
 
@@ -55,27 +42,27 @@ font-family: 'Zen Maru Gothic', sans-serif;
   margin: 0 auto;
   justify-content: center;
   background-color: white;
-  height: 65vh;
+  height: 68vh;
   width: 65vh;
   border-radius: 25px 25px 25px 0;
 }
 
 .form-space-header {
-  display:block;
+  display: block;
   text-align: justify;
   align-items: center;
   justify-content: center;
   padding: 30px 30px 15px 30px;
 }
 
-.form-space-header > h1 {
+.form-space-header>h1 {
   font-family: 'Zen Maru Gothic', sans-serif;
-   color: #083E9E;
-   font-size: 30px;
+  color: #083E9E;
+  font-size: 30px;
 
 }
 
-.form-space-header > p {
+.form-space-header>p {
   font-family: 'Zen Maru Gothic', sans-serif;
   color: #4A5568;
   font-size: 20px;
@@ -85,21 +72,30 @@ font-family: 'Zen Maru Gothic', sans-serif;
   color: black;
 }
 
+.form-input button {
+  width: 90%;
+  margin: 15px 0px 0px 20px;
+
+}
+
 .form-input-email-password {
   display: block;
   margin-bottom: 30px;
-  text-align: justify;  
+  text-align: justify;
 }
+
 .inputPassword4 {
-font-size: 40px;
+  font-size: 40px;
 }
 
 .form-label {
   margin-left: 20px;
+  font-weight: bold;
 }
 
 .down {
   margin-top: 15px;
+  font-weight: bold;
 }
 
 
@@ -113,8 +109,9 @@ font-size: 40px;
 }
 
 
-input:focus, input.form-control:focus {
-  outline:none !important;
+input:focus,
+input.form-control:focus {
+  outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
   -moz-box-shadow: none;
@@ -130,12 +127,12 @@ input:focus, input.form-control:focus {
   width: 90%;
 }
 
-.log:hover{
+.log:hover {
   background-color: #062863;
 }
 
-.log:focus{
-  outline:none !important;
+.log:focus {
+  outline: none !important;
   outline-width: 0 !important;
   box-shadow: none;
   -moz-box-shadow: none;
@@ -154,6 +151,6 @@ input:focus, input.form-control:focus {
   color: white;
 }
 
-.forgot:hover{
+.forgot:hover {
   color: rgb(119, 118, 118);
 }

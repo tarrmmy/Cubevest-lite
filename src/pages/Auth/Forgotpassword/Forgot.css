@@ -1,25 +1,26 @@
 * {
     margin: 0;
     padding: 0;
-    text-align: center;
     justify-content: center;
-    align-items: center;
     -webkit-user-drag: none;
     -webkit-app-region: none;
 }
 
-#background {
+.body {
     background-color: #062863;
     height: 100vh;
     color: white;
     width: 100%;
+    margin: auto 0;
+    align-items: center;
+    text-align: center;
 }
 
 .fort {
     margin: auto 0;
     justify-content: center;
     background-color: white;
-    height: 50vh;
+    height: 60vh;
     width: 65vh;
     border-radius: 25px 25px 25px 0;
 }
@@ -30,5 +31,19 @@
     align-items: center;
     justify-content: center;
     padding: 30px 30px 15px 30px;
+}
 
+.butten {
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px 10px 10px 0;
+    background-color: #083E9E;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.butten:hover {
+    background-color: #062863;
+    color: white;
+    cursor: pointer;
 }

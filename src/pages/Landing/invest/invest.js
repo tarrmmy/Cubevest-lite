@@ -17,23 +17,6 @@ import Footer from '../../../components/Footer/Footer';
 import backg from './backg.png'
 
 const invest = () => {
-    // const Sort = [
-    //             {
-    //                 icons:icon1 ,
-    //                 head:'Investments simplified',
-    //                 content:'With minimum investments starting as low as N5,000, investment is no longer out of reach. Everyone is welcome.',
-    //             },
-    //             {
-    //                 icons: icon2,
-    //                 head:'Invest confidently',
-    //                 content:'All listed investments are properly due diligenced and highly secured opportunities.',
-    //             },
-    //             {
-    //                 icons:icon3 ,
-    //                 head:'Diversify your portfolio',
-    //                 content:'Invest in various industries such as fixed income instruments, agriculture, transportation, etc.',
-    //             },
-    // ]
 
     const Studio = [
                 {
@@ -105,7 +88,7 @@ const invest = () => {
 
                 <div className='target-right'>
                  
-                 <img src={phone}/>
+                 <img src={phone} alt=''/>
                
                 </div>
 
@@ -123,43 +106,25 @@ const invest = () => {
             <div id="divs">
 
                 <div id="up">
-                    <img id="up1" src={icon1}/>
+                    <img id="up1" src={icon1} alt=''/>
                     <h3 id="up2">Investments simplified</h3>
                     <h4 id="up3">With minimum investments starting<br/>as low as N5,000, investment is no<br/>longer out of reach. Everyone is<br/>welcome.</h4>
                 </div>
                 
                 <div id="up">
-                    <img id="up1" src={icon2}/>
+                    <img id="up1" src={icon2} alt=''/>
                     <h3 id="up2">Invest confidently</h3>
                     <h4 id="up3">All listed investments are properly<br/>due diligenced and highly secured<br/>opportunities.</h4>
                 </div>
                 
                 <div id="up">
-                    <img id="up1" src={icon3}/>
+                    <img id="up1" src={icon3} alt=''/>
                     <h3 id="up2">Diversify your portfolio</h3>
                     <div id="up3">Invest in various industries such as<br/>fixed income instruments, agriculture,<br/>transportation, etc.</div>
                 </div>
                 
             </div>    
-            {/* <div id="card-board" >
-                <div style={{width: "20rem", height: "20rem"}}>
-                    {Sort.map(sort=>(
-                        <div>
-                            <img id="card-icons" src={sort.icons} />
-                            <div class="card-body">
-                                
-                                <h3 id="card-body1">{sort.head}</h3>
-                                <p id="card-body2" >{sort.content}</p>
-                            
-                            </div>
-                        </div>
-                    ))}
-                        
-                </div>
-            </div> */}
-             {/* divs ends */}
-
-
+          
             <div className='Royal'>
 
                 <div id="Royal-text">
@@ -182,7 +147,7 @@ const invest = () => {
 
                             <div id="Book" className="card">
 
-                                <img src={studio.photos} className="card-img-top" id="top-img" alt="photo"/>
+                                <img src={studio.photos} className="card-img-top" id="top-img" alt=""/>
                                 <div className="card-body">
 
                                     <h2 id="cad" className="card-title">{studio.topic}</h2>
