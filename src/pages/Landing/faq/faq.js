@@ -184,7 +184,7 @@ const Faq = () => {
                 
             </div>
 
-       
+            BCANNSCV
        </div>
     )
 }

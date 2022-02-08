@@ -80,7 +80,7 @@
 
 .form-input-email-password {
   display: block;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   text-align: justify;
 }
 
@@ -92,12 +92,6 @@
   margin-left: 20px;
   font-weight: bold;
 }
-
-.down {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
 
 .form-control {
   margin-left: 20px;
@@ -140,15 +134,15 @@ input.form-control:focus {
 }
 
 .footer {
+  margin: 10px 0px 0px 0px;
   display: block;
-  color: white;
-  margin-top: 15px;
+  color: black;
   font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 .forgot {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .forgot:hover {
