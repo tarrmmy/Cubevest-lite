@@ -8,6 +8,7 @@ export async function apiCalls(data, url, method) {
       url: `${baseDomain}/${url}`,
       data
     })
+    
       .then(response => {
         console.log(response)
         if (response) {

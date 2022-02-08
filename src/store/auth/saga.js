@@ -40,6 +40,44 @@ export function* LOGIN({payload}){
   }
 }
 
+
+export function* FORGOT({payload}){
+  yield put(
+    {
+    type: 'auth/SET_STATE',
+    payload: {
+      loading: true,
+    },
+  }
+  )
+  const success = yield call(apiCalls, payload, 'auth/forgot', )
+  console.log(success)
+  if (success.status) {
+    yield put(
+      {
+      type: 'auth/SET_STATE',
+      payload: {
+        data: success,
+        loading:false
+      },
+    }
+    )
+  }
+  if(!success.status){
+    yield put({
+      type: 'auth/SET_STATE',
+      payload: {
+        loading:false
+      },
+    })
+    notification.open({
+      message: 'Email required',
+      decription:success.message,     
+    })
+  }
+}
+
+
 export function* SIGNUP({payload}){
   const {email, password} = payload
   yield put({
@@ -68,10 +106,13 @@ export function* SIGNUP({payload}){
 }
 
 
+
+
 export default function* rootSaga() {
   yield all([
     takeEvery(actions.LOGOUT, LOGOUT),
     takeEvery(actions.LOGIN, LOGIN),
     takeEvery(actions.SIGNUP, SIGNUP),
+    takeEvery(actions.FORGOT, FORGOT),
   ])
 }

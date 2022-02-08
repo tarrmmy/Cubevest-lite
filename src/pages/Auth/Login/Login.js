@@ -48,11 +48,11 @@ const Login = ({dispatch, auth}) => {
               <input name="password" onChange={handleChange} type="password" className="form-control" id="inputPassword4"/>        
               <button type="submit" className="btn btn-primary log">{auth.loading? 'loading...': 'login'}</button>
             </form>
-           </div>
+        </div>
          </div>
                   <div className='footer'>
                        <p>Don't have an account? <a href="/signup" className='forgot'>Register</a></p>
-                       <p><a href='' className='forgot'>Forgot password?</a></p>
+                       <p><a href='/Forgot' className='forgot'>Forgot password?</a></p>
                 </div>
     </div>
   )

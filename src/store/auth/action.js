@@ -3,5 +3,6 @@ export const actions = {
   LOGIN: 'auth/LOGIN',
   SIGNUP: 'auth/SIGNUP',
   LOGOUT: 'auth/LOGOUT',
+  FORGOT: 'auth/FORGOT',
   CHANGE_NAME: 'auth/CHANGE_NAME',
 }

@@ -16,6 +16,7 @@ import Regular from './pages/Landing/regular/regular';
 import Target from './pages/Landing/target/target';
 import Footer from './components/Footer/Footer';
 import { Provider } from 'react-redux';
+import Forgot from './pages/Auth/Forgotpassword/Forgot';
 const sagaMiddleware = createSagaMiddleware()
 
 export const history = createBrowserHistory()
@@ -37,6 +38,7 @@ function App() {
           <Route component = {Target} path="/target" />
           <Route component = {Regular} path="/regular" />
           <Route component = {Footer} path="/Footer" />
+          <Route component = {Forgot} path="/Forgot" />
           <Redirect from="*" to="/" />
         </Switch>
       </Router>

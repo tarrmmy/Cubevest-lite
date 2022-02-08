@@ -3,8 +3,6 @@ import React from 'react';
 import Nav from '../../../components/Navbar/Nav';
 import './invest.css';
 import phone from './phone.png'
-// import card1 from './card1.png'
-// import card2 from './card2.png'
 import icon1 from './icon1.png'
 import icon2 from './icon2.png'
 import icon3 from './icon3.png'
@@ -17,10 +15,8 @@ import seed from './seed.jpg'
 import Secondfooter from '../../../components/Secondfooter/Secondfooter';
 import Footer from '../../../components/Footer/Footer';
 import backg from './backg.png'
-import { icons } from 'antd/lib/image/PreviewGroup';
 
 const invest = () => {
-    
     // const Sort = [
     //             {
     //                 icons:icon1 ,
@@ -172,7 +168,7 @@ const invest = () => {
                     <p>With as little as NGN5000, you can now access pre-vetted<br/>low-medium risk primary and secondary investment<br/>opportunities. No hidden fees/charges. Thorough due<br/>diligence and pre-vetting on all investments are carried<br/>out for maximum safety.</p>
                 
                 </div>
-                <img src={backg} id="Royal-img"/>
+                <img src={backg} id="Royal-img" alt=''/>
             
             </div>
 
@@ -191,17 +187,13 @@ const invest = () => {
 
                                     <h2 id="cad" className="card-title">{studio.topic}</h2>
                                     <div id='roww'>
-
                                         <p id="roww1" className='text col-auto mb-20'>{studio.Price}</p>
                                         <p id="roww1" className='text col-auto mb-20'>{studio.numb}</p>
-                                
                                     </div>
 
                                     <div id='rowww'>
-
                                         <p id="rowww1" className='text col-auto mb-20'>{studio.per}</p> 
                                         <p id="rowww1" className='text col-auto mb-20'>{studio.investors}</p> 
-                                    
                                     </div>
                                 
                                 </div>
