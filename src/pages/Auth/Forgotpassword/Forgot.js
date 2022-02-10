@@ -27,7 +27,6 @@ const Forgot = ({dispatch , auth}) => {
     return (
       <div className='body'>
         <div className='fort'>
-
           <div className='fort-header'>
             <h1>Forgot Password</h1>
             <p>Enter your email to reset your password</p>
@@ -38,14 +37,13 @@ const Forgot = ({dispatch , auth}) => {
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                 <input type="email" name="email"   onChange={handleChange} class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
               </div>
-                <button type="submit" className="butten" onClick={'Hey'}>RESET PASSWORD</button>
+                <button type="submit" className="butten">RESET PASSWORD</button>
             </form>
           </div>
-
         </div>
 
       </div>
     )
 }
 
-export default connect(mapStateToProp)(Forgot)
+export default connect(mapStateToProp)(Forgot);
