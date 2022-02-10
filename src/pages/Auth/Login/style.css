@@ -25,16 +25,20 @@
   font-family: 'Zen Maru Gothic', sans-serif;
   font-size: 2rem;
   justify-content: center;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
+  color: white;
 }
 
-.header>h2 {
-  margin-top: 10px;
+.header h2 {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .piggy {
   margin-right: 15px;
-  margin-top: 10px;
+  margin-top: -10px;
   font-size: 2rem;
 }
 
@@ -123,6 +127,7 @@ input.form-control:focus {
 
 .log:hover {
   background-color: #062863;
+  color: black;
 }
 
 .log:focus {

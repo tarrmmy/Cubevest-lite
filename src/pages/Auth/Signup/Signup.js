@@ -27,7 +27,6 @@ const Signup = ({dispatch, auth}) => {
   return (
     <div id="head">
       <h2 id="cube">Cubevest-lite</h2>
-     
       <p id="container">
         <div id="create">
           <h3>Create a Secure Account</h3>
